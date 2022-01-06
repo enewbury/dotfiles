@@ -1,0 +1,3 @@
+EXCLUDES="README.md"
+DOTFILES_DIRS="~/src/github.com/enewbury/dotfiles"
+
