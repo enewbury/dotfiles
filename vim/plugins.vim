@@ -20,6 +20,7 @@ let g:coc_global_extensions = [
 Plug 'chriskempson/base16-vim'
 Plug 'itchyny/lightline.vim'
 Plug 'arcticicestudio/nord-vim'
+Plug 'tomasiser/vim-code-dark'
 Plug 'ryanoasis/vim-devicons'
 
 " UI Features
@@ -204,6 +205,7 @@ map <leader>at :AT<CR>
 "
 let g:ale_fixers = { 'elixir': ['mix_format']}
 let g:ale_statusline_format = ['⨉ %d', '⚠ %d', '⬥ ok']
+let g:ale_fix_on_save = 1
 
 augroup AutoAle
   autocmd!
