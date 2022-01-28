@@ -5,6 +5,15 @@ nmap <silent> <C-j>      :wincmd j<CR>
 nmap <silent> <C-h>      :wincmd h<CR>
 nmap <silent> <C-l>      :wincmd l<CR>
 
+" moves line up or down
+nnoremap <M-j> :m+<CR>==
+nnoremap <M-k> :m-2<CR>==
+inoremap <M-j> <Esc>:m+<CR>==gi
+inoremap <M-k> <Esc>:m-2<CR>==gi
+vnoremap <M-j> :m '>+1<CR>gv=gv
+vnoremap <M-k> :m '<-2<CR>gv=gv
+
+
 " close current buffer
 nmap <silent> <leader>q :q<CR>
 
@@ -36,6 +45,11 @@ nmap <leader>d :call FindDoc()<CR>
 
 " Use K to show documentation in preview window.
 nnoremap <silent> K :call <SID>show_documentation()<CR>
+
+nnoremap <leader>so :so $MYVIMRC<CR>
+
+nmap <leader>o o<Esc>
+nmap <leader>O O<Esc>
 
 function! s:show_documentation()
   if (index(['vim','help'], &filetype) >= 0)

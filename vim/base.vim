@@ -25,7 +25,7 @@ set splitbelow
 set splitright
 
 " layout
-set signcolumn=number
+set signcolumn=auto
 set cmdheight=1
 
 " indentation without hard tabs
@@ -53,10 +53,6 @@ set number
 set relativenumber
 " autocmd BufEnter * set relativenumber
 
-" search
-nnoremap / /\v
-vnoremap / /\v
-
 set ignorecase    " case insensitive search
 set smartcase     " case sensitive search if at least one uppercase is used
 set gdefault      " use /g (replace all on line instead of first) by default
@@ -83,6 +79,15 @@ augroup vim_rc_autojump
     \ endif
 augroup END
 
-set ttimeoutlen=50
+set ttimeoutlen=300
 
 set updatetime=2000
+
+"
+" ripgrep
+"
+if executable('rg')
+  " use Ripgrep over Grep
+  set grepprg="rg --color never --no-heading"
+endif
+

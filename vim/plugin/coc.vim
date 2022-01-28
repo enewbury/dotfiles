@@ -1,6 +1,17 @@
-"
+" 
 " coc.nvim
 "
+let g:coc_global_extensions = [
+  \ 'coc-elixir',
+  \ 'coc-json',
+  \ 'coc-rust-analyzer',
+  \ 'coc-tsserver',
+  \ 'coc-eslint',
+  \ 'coc-prettier',
+  \ 'coc-stylelintplus',
+  \ 'coc-snippets',
+  \ ]
+
 " Use tab for trigger completion with characters ahead and navigate.
 inoremap <silent><expr> <Tab>
       \ pumvisible() ? "\<C-n>" :
