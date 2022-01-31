@@ -16,5 +16,6 @@ highlight NonText guibg=NONE ctermbg=none
 highlight SpecialKey guibg=NONE ctermbg=none
 highlight VertSplit guibg=NONE ctermbg=none
 highlight SignColumn guifg=NONE ctermfg=NONE guibg=NONE ctermbg=none
-
+highlight Pmenu ctermfg=188 ctermbg=237 guifg=#dcdfe4 guibg=#313640
+highlight PmenuSel ctermfg=236 guifg=#282c34 
 

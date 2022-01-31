@@ -2,7 +2,16 @@
 # VERSION: 3.0
 SETUVAR BAT_THEM:Nord
 SETUVAR --export BAT_THEME:Nord
+SETUVAR ZO_CMD:zo
+SETUVAR Z_CMD:z
+SETUVAR Z_DATA:/home/eric/\x2elocal/share/z/data
+SETUVAR Z_DATA_DIR:/home/eric/\x2elocal/share/z
+SETUVAR Z_EXCLUDE:\x5e/home/eric\x24
 SETUVAR __fish_initialized:3100
+SETUVAR _fisher_decors_2F_fish_2D_ghq_files:/home/eric/\x2econfig/fish/functions/__ghq_repository_search\x2efish\x1e/home/eric/\x2econfig/fish/conf\x2ed/ghq_key_bindings\x2efish\x1e/home/eric/\x2econfig/fish/completions/ghq\x2efish
+SETUVAR _fisher_jethrokuan_2F_z_files:/home/eric/\x2econfig/fish/functions/__z\x2efish\x1e/home/eric/\x2econfig/fish/functions/__z_add\x2efish\x1e/home/eric/\x2econfig/fish/functions/__z_clean\x2efish\x1e/home/eric/\x2econfig/fish/functions/__z_complete\x2efish\x1e/home/eric/\x2econfig/fish/conf\x2ed/z\x2efish
+SETUVAR _fisher_jorgebucaran_2F_fisher_files:/home/eric/\x2econfig/fish/functions/fisher\x2efish\x1e/home/eric/\x2econfig/fish/completions/fisher\x2efish
+SETUVAR _fisher_plugins:jorgebucaran/fisher\x1ejethrokuan/z\x1edecors/fish\x2dghq
 SETUVAR fish_color_autosuggestion:4c566a
 SETUVAR fish_color_cancel:\x2dr
 SETUVAR fish_color_command:81a1c1
