@@ -28,6 +28,9 @@ nnoremap <C-y> :tabprevious<CR>
 noremap  <C-s>      :update<CR>
 inoremap <C-s> <C-o>:update<CR><Esc>
 
+nnoremap ^ 0
+nnoremap 0 ^
+
 " zoom / unzoom a vim pane
 nnoremap <leader>z :call FoldToggle()<CR>
 
@@ -50,6 +53,9 @@ nnoremap <leader>so :so $MYVIMRC<CR>
 
 nmap <leader>o o<Esc>
 nmap <leader>O O<Esc>
+
+" copy to system clipboard
+nnoremap <C-@> :call system("wl-copy", @")<CR>
 
 function! s:show_documentation()
   if (index(['vim','help'], &filetype) >= 0)

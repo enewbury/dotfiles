@@ -5,6 +5,7 @@ set ruler         " cursor position
 set scrolloff=5   " scroll offset
 set autowrite     " automatically :write before running commands
 set cursorline    " highlight current line
+set nowrap        " don't wrap lines
 "
 set wildmenu
 set wildmode=list:longest

@@ -1,7 +1,8 @@
 let g:fzf_command_prefix = 'Fzf'
-
-nmap <C-p> :FzfFiles<CR>
+nnoremap <expr> <C-p> (len(system('git rev-parse')) ? ':FzfFiles' : ':FzfGFiles --exclude-standard --others --cached')."\<cr>"
+" nmap <C-p> :FzfGFiles<CR>
 nmap <C-f> :FzfRg<CR>
+nmap <C-b> :FzfBuffers<CR>
 
 " CTRL-A CTRL-Q to select all and build quickfix list
 function! s:build_quickfix_list(lines)

@@ -42,11 +42,15 @@ Plug 'neoclide/coc.nvim', { 'branch': 'release' }
 Plug 'antoinemadec/coc-fzf'
 Plug 'gabrielpoca/replacer.nvim'
 Plug 'dense-analysis/ale'
+Plug 'vim-scripts/camelcasemotion'
 
 " Elixir
 Plug 'tpope/vim-endwise',    { 'for': ['ruby', 'elixir'] }
 Plug 'amiralies/coc-elixir', {'do': 'yarn install && yarn prepack'}
 Plug 'elixir-editors/vim-elixir'
+
+" Prettier
+Plug 'prettier/vim-prettier', { 'do': 'yarn install --frozen-lockfile --production' }
 
 " Other syntaxes
 Plug 'sheerun/vim-polyglot'
