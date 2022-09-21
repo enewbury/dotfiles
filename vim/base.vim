@@ -14,8 +14,7 @@ set laststatus=2
 set backspace=indent,eol,start " allow backspacing over everything in insert mode
 set noerrorbells
 
-so ./clipboard.vim
-set clipboard=unnamed " MACOS
+set clipboard=unnamed
 
 set shell=/usr/bin/fish
 

@@ -2,7 +2,7 @@ let g:lightline = {
       \ 'colorscheme': 'onehalfdark',
       \ 'mode_map': { 'c': 'NORMAL' },
       \ 'active': {
-      \   'left': [ [ 'mode', 'paste' ], [ 'cocstatus', 'gitbranch', 'filename' ] ],
+      \   'left': [ [ 'mode', 'paste' ], [ 'gitbranch', 'filename' ] ],
       \   'right': [ [ 'ale', 'lineinfo' ],
       \              [ 'percent' ],
       \              [ 'fileformat', 'fileencoding', 'filetype' ] ]

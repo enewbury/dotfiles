@@ -44,11 +44,9 @@ Plug 'christoomey/vim-tmux-navigator'
 call plug#end()
 
 source ~/.vim/plugin/lightline.vim
-source ~/.vim/plugin/neoterm.vim
 source ~/.vim/plugin/vim-test.vim
 source ~/.vim/plugin/fugitive.vim
 source ~/.vim/plugin/projectionist.vim
-source ~/.vim/plugin/ale.vim
 source ~/.vim/plugin/nerdtree.vim
 
 "
