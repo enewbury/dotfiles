@@ -9,7 +9,8 @@
 
 ```
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-brew install rcm 
+brew install rcm starship 
 git clone git@github.com:enewbury/dotfiles.git ~/src/github.com/enewbury/dotfiles
+git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 env RCRC=~/src/github.com/enewbury/dotfiles rcup
 ```
