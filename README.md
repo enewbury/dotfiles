@@ -9,8 +9,19 @@
 
 ```
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-brew install rcm starship 
+brew install rcm starship fish
+chsh -s /usr/local/bin/fish
 git clone git@github.com:enewbury/dotfiles.git ~/src/github.com/enewbury/dotfiles
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 env RCRC=~/src/github.com/enewbury/dotfiles rcup
+```
+
+Install plugins
+```
+fish
+fisher install
+tmux
+<Prefix>I
+vim
+:PlugInstall
 ```
