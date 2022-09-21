@@ -1,0 +1,26 @@
+import:
+  - ~/.config/alacritty/onedark.yml
+  - ~/.config/alacritty/keybindings.yml
+
+env:
+  TERM: xterm-256color
+
+window:
+  padding:
+    x: 5
+    y: 5
+  dynamic_padding: true
+  # decorations: none
+  opacity: 0.94
+
+
+font:
+  normal: 
+    family: FuraCode Nerd Font Mono
+    style: Regular
+  bold:
+    family: FuraCode Nerd Font Mono
+    style: Bold
+  size: 13.0
+
+live_config_reaload: true

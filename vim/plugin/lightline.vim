@@ -15,15 +15,10 @@ let g:lightline = {
       \   'filetype': 'LightLineFiletype',
       \   'fileencoding': 'LightLineFileencoding',
       \   'mode': 'LightLineMode',
-      \   'cocstatus': 'coc#status',
       \   'gitbranch': 'FugitiveHead',
       \ },
-      \ 'component_expand': {
-      \   'ale': 'LinterStatus',
-      \ },
-      \ 'component_type': {
-      \ 
-      \ },
+      \ 'component_expand': { },
+      \ 'component_type': { },
       \ 'separator': { 'left': '', 'right': '' },
       \ 'subseparator': { 'left': '', 'right': '' }
       \ }

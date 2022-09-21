@@ -6,7 +6,6 @@ set scrolloff=5   " scroll offset
 set autowrite     " automatically :write before running commands
 set cursorline    " highlight current line
 set nowrap        " don't wrap lines
-"
 set wildmenu
 set wildmode=list:longest
 set ttyfast
@@ -14,7 +13,9 @@ set lazyredraw
 set laststatus=2
 set backspace=indent,eol,start " allow backspacing over everything in insert mode
 set noerrorbells
-set clipboard=unnamedplus " X11 clipboard integration
+
+so ./clipboard.vim
+set clipboard=unnamed " MACOS
 
 set shell=/usr/bin/fish
 
@@ -42,17 +43,13 @@ set autoindent  " copy indentation from previous line
 set smartindent " auto add 1 indentation level in some cases
 
 " line breaking
-set wrap
 set linebreak
 
 set foldmethod=indent
 setlocal foldlevel=20
 setlocal foldlevelstart=20
 
-" relative line numbering
 set number
-set relativenumber
-" autocmd BufEnter * set relativenumber
 
 set ignorecase    " case insensitive search
 set smartcase     " case sensitive search if at least one uppercase is used
@@ -83,12 +80,3 @@ augroup END
 set ttimeoutlen=300
 
 set updatetime=2000
-
-"
-" ripgrep
-"
-if executable('rg')
-  " use Ripgrep over Grep
-  set grepprg="rg --color never --no-heading"
-endif
-

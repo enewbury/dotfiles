@@ -17,12 +17,9 @@ vnoremap <M-k> :m '<-2<CR>gv=gv
 " close current buffer
 nmap <silent> <leader>q :q<CR>
 
-" switch between the last two files
-map <Tab> :b#<CR>
-
 " tab navigation
-nnoremap <C-y> :tabprevious<CR>
-" nnoremap <C-u> :tabnext<CR>
+nnoremap <Leader>tp :tabprevious<CR>
+nnoremap <Leader>tn :tabnext<CR>
 
 " Ctrl-S save
 noremap  <C-s>      :update<CR>
@@ -46,21 +43,13 @@ inoremap <C-e> <C-o>$
 
 nmap <leader>d :call FindDoc()<CR>
 
-" Use K to show documentation in preview window.
-nnoremap <silent> K :call <SID>show_documentation()<CR>
+nnoremap <leader>Vc :so $MYVIMRC<CR>
 
-nnoremap <leader>so :so $MYVIMRC<CR>
-
-nmap <leader>o o<Esc>
 nmap <leader>O O<Esc>
+nmap <leader>o o<Esc>
 
-" copy to system clipboard
-nnoremap <C-@> :call system("wl-copy", @")<CR>
+nmap <leader>h :noh<CR>
+nmap <leader>sp :setlocal spell spelllang=en_us<CR>
+nmap <leader>nsp :setlocal nospell<CR>
 
-function! s:show_documentation()
-  if (index(['vim','help'], &filetype) >= 0)
-    execute 'h '.expand('<cword>')
-  else
-    call CocAction('doHover')
-  endif
-endfunction
+nmap <leader>/ gcc

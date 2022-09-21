@@ -1,3 +1,1 @@
-EXCLUDES="README.md local/*.sample"
-DOTFILES_DIRS="~/src/github.com/enewbury/dotfiles"
-
+EXCLUDES="README.md local/*.sample LICENSE install.sh"

@@ -1,8 +1,8 @@
 let test#strategy = 'vimterminal'
 
-map <leader>sr :TestSuite<CR>
-map <leader>ss :TestNearest<CR>
-map <leader>sf :TestFile<CR>
-map <leader>sl :TestLast<CR>
-map <leader>sv :TestVisit<CR>
+map <leader>ta :TestSuite<CR>
+map <leader>tt :TestNearest<CR>
+map <leader>tf :TestFile<CR>
+map <leader>tl :TestLast<CR>
+map <leader>tv :TestVisit<CR>
 
