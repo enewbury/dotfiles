@@ -1,10 +1,14 @@
-fish_add_path /usr/local/sbin
-
 switch (uname)
   case Linux
+    if status --is-interactive
+      eval (/home/linuxbrew/.linuxbrew/bin/brew shellenv)
+    end
     fish_add_path /home/eric/.local/bin
     fish_add_path /home/eric/.yarn/bin
   case Darwin
+    if status --is-interactive
+      eval (/opt/homebrew/bin/brew shellenv)
+    end
     fish_add_path /Users/eric/.local/bin
     fish_add_path /Users/eric/.yarn/bin
 end
