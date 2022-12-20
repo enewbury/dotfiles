@@ -4,7 +4,7 @@ switch (uname)
   case Linux
     fish_add_path $HOME/.linuxbrew/bin
   case Darwin
-    fish_add_path /opt/homebrew/bin
+    fish_add_path --path /opt/homebrew/bin
 end
 
 set -gx EDITOR (type -p lvim)
