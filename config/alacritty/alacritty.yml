@@ -7,10 +7,10 @@ env:
 
 window:
   padding:
-    x: 5
-    y: 5
+    x: 0
+    y: 0
   dynamic_padding: true
-  # decorations: none
+  decorations: buttonless
   opacity: 0.94
 
 
@@ -21,6 +21,5 @@ font:
   bold:
     family: FuraCode Nerd Font Mono
     style: Bold
-  size: 13.0
+  size: 16.0
 
-live_config_reaload: true
