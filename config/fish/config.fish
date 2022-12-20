@@ -1,16 +1,10 @@
+fish_add_path $HOME/.local/bin
+fish_add_path $HOME/.yarn/bin
 switch (uname)
   case Linux
-    if status --is-interactive
-      eval (/home/linuxbrew/.linuxbrew/bin/brew shellenv)
-    end
-    fish_add_path /home/eric/.local/bin
-    fish_add_path /home/eric/.yarn/bin
+    fish_add_path $HOME/.linuxbrew/bin
   case Darwin
-    if status --is-interactive
-      eval (/opt/homebrew/bin/brew shellenv)
-    end
-    fish_add_path /Users/eric/.local/bin
-    fish_add_path /Users/eric/.yarn/bin
+    fish_add_path /opt/homebrew/bin
 end
 
 set -gx EDITOR (type -p lvim)
