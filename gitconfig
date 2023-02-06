@@ -72,3 +72,6 @@
   root = ~/src
 [init]
 	defaultBranch = main
+
+[pretty]
+    colorful = "%Cred%h%Creset - %s %Cgreen(%cr)%Creset%C(auto)%d%Creset %C(dim white)%an%Creset"
