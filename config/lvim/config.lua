@@ -125,17 +125,6 @@ lvim.builtin.treesitter.highlight.enabled = true
 -- ---see the full default list `:lua print(vim.inspect(lvim.lsp.automatic_configuration.skipped_servers))`
 -- vim.list_extend(lvim.lsp.automatic_configuration.skipped_servers, { "pyright" })
 
--- local lvim_lsp_utils = require("lspconfig")["util"]
--- local opts = {
---   root_dir = lvim_lsp_utils.root_pattern(
---     'tailwind.config.js',
---     'assets/tailwind.config.js',
---     'tailwind.config.ts',
---     'postcss.config.js',
---     'postcss.config.ts', 'package.json', 'node_modules', '.git')
--- } -- check the lspconfig documentation for a list of all possible options
--- require("lvim.lsp.manager").setup("tailwindcss", opts)
-
 -- ---remove a server from the skipped list, e.g. eslint, or emmet_ls. !!Requires `:LvimCacheReset` to take effect!!
 -- ---`:LvimInfo` lists which server(s) are skipped for the current filetype
 -- vim.tbl_map(function(server)
@@ -157,7 +146,7 @@ local formatters = require "lvim.lsp.null-ls.formatters"
 formatters.setup {
   {
     command = "prettier",
-    filetypes = { "typescript", "typescriptreact", "yal", "javascript" }
+    filetypes = { "typescript", "typescriptreact", "yal" --[[,  "javascript" ]] }
   },
 }
 
@@ -182,9 +171,9 @@ formatters.setup {
 -- Additional Plugins
 lvim.plugins = {
   { "christianchiarulli/nvcode-color-schemes.vim" },
-  -- { "christoomey/vim-tmux-navigator" },
-  { "aserowy/tmux.nvim" },
-  { "vim-test/vim-test",
+  { "christoomey/vim-tmux-navigator" },
+  {
+    "vim-test/vim-test",
     config = function()
       vim.g["test#strategy"] = "toggleterm"
     end

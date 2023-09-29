@@ -2,8 +2,8 @@ import:
   - ~/.config/alacritty/onedark.yml
   - ~/.config/alacritty/keybindings.yml
 
-env:
-  TERM: xterm-256color
+# env:
+  # TERM: alacritty
 
 window:
   padding:
@@ -16,10 +16,10 @@ window:
 
 font:
   normal: 
-    family: FuraCode Nerd Font Mono
+    family: FiraCode Nerd Font Mono
     style: Regular
   bold:
-    family: FuraCode Nerd Font Mono
+    family: FiraCode Nerd Font Mono
     style: Bold
   size: 16.0
 
