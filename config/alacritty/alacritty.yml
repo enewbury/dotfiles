@@ -10,7 +10,7 @@ window:
     x: 0
     y: 0
   dynamic_padding: true
-  decorations: buttonless
+  decorations: full
   opacity: 0.94
 
 
@@ -21,5 +21,5 @@ font:
   bold:
     family: FiraCodeNerdFont
     style: Bold
-  size: 16.0
+  size: 14.0
 
