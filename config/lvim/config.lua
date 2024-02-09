@@ -189,9 +189,10 @@ linters.setup {
 -- Additional Plugins
 lvim.plugins = {
   { "christianchiarulli/nvcode-color-schemes.vim" },
-  -- { "christoomey/vim-tmux-navigator" },
-  { "aserowy/tmux.nvim" },
-  { "vim-test/vim-test",
+  { "christoomey/vim-tmux-navigator" },
+  -- { "aserowy/tmux.nvim" },
+  {
+    "vim-test/vim-test",
     config = function()
       vim.g["test#strategy"] = "toggleterm"
     end
