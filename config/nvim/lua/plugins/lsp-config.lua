@@ -18,17 +18,21 @@ return {
     config = function()
       local lspconfig = require("lspconfig")
 
+      local capabilities = require('cmp_nvim_lsp').default_capabilities()
+
       lspconfig.lua_ls.setup({
-        settings = { Lua = { diagnostics = { globals = { 'vim' } } } }
+        settings = { Lua = { diagnostics = { globals = { 'vim' } } } },
+        capabilities = capabilities
       })
 
       lspconfig.elixirls.setup({
-        cmd = { "elixir-ls" }
+        cmd = { "elixir-ls" },
+        capabilities = capabilities
       })
 
-      vim.keymap.set('n', '<leader>ld', vim.diagnostic.open_float, {desc = "Open diagnostic under cursor"})
-      vim.keymap.set('n', '<leader>lk', vim.diagnostic.goto_prev, {desc = "Show previous diagnostic"})
-      vim.keymap.set('n', '<leader>lj', vim.diagnostic.goto_next, {desc = "Show next diagnostic"})
+      vim.keymap.set('n', '<leader>ld', vim.diagnostic.open_float, { desc = "Open diagnostic under cursor" })
+      vim.keymap.set('n', '<leader>lk', vim.diagnostic.goto_prev, { desc = "Show previous diagnostic" })
+      vim.keymap.set('n', '<leader>lj', vim.diagnostic.goto_next, { desc = "Show next diagnostic" })
 
 
       -- Use LspAttach autocommand to only map the following keys
@@ -39,7 +43,7 @@ return {
           -- Buffer local mappings.
           -- See `:help vim.lsp.*` for documentation on any of the below functions
           local function opts(desc)
-            return desc and { buffer = ev.buf, desc = desc } or { buffer = ev.buf}
+            return desc and { buffer = ev.buf, desc = desc } or { buffer = ev.buf }
           end
 
           vim.keymap.set('n', 'K', vim.lsp.buf.hover, opts("Show documentation"))

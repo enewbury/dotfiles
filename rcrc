@@ -1,1 +1,2 @@
 EXCLUDES="README.md local/*.sample LICENSE install.sh"
+DOTFILES_DIRS="$HOME/src/github.com/enewbury/dotfiles"

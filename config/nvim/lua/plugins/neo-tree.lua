@@ -32,11 +32,16 @@ return {
   config = function()
     vim.keymap.set('n', '<leader>e', ':Neotree toggle reveal<CR>', { silent = true })
     require("neo-tree").setup({
+      window = {
+        mappings = {
+          ["t"] = "noop"
+        }
+      },
       filesystem = {
         window = {
           mappings = {
             ["tf"] = "telescope_find",
-            ["tg"] = "telescope_grep",
+            ["td"] = "telescope_grep",
           },
         },
         commands = {

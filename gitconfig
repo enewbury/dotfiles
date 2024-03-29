@@ -61,15 +61,13 @@
 [hub]
   protocol = https
 
-# [init]
-#   templateDir = ~/.git-template
-
 [include]
   # keep your user name and 3rd-party config in a more private file
   path = ~/.local/gitconfig
 
 [ghq]
   root = ~/src
+
 [init]
 	defaultBranch = main
 
