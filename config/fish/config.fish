@@ -8,7 +8,7 @@ switch (uname)
     fish_add_path --path /opt/homebrew/bin
 end
 
-set -gx EDITOR (type -p lvim)
+set -gx EDITOR (type -p nvim)
 set -gx GPG_TTY (tty)
 set fish_greeting
 

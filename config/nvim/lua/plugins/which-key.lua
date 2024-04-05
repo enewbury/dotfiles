@@ -8,11 +8,13 @@ return {
   config = function()
     local wk = require("which-key")
     wk.setup({
-      window = { border = "single", winblend = 60 }
+      window = { border = "single" }
     })
     wk.register({
       s = { name = "Searching" },
-      l = { name = "LSP" }
+      t = { name = "Tests" },
+      l = { name = "LSP" },
+      g = { name = "Git" }
     }, { prefix = "<leader>" })
   end
 }

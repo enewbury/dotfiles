@@ -27,6 +27,7 @@ vim.keymap.set('n', '<leader>h', ':noh<cr>', { desc = "Clear highlighting" })
 vim.keymap.set('n', '<leader>ss', ':%s//g<left><left>', { desc = "Search and replace in buffer" })
 vim.keymap.set('n', '<leader>j', ':m -2<cr>', { desc = "Move line down" })
 vim.keymap.set('n', '<leader>k', ':m +1<cr>', { desc = "Move line up" })
+vim.keymap.set('n', '<leader>gC', ':CoAuthor<cr>', { desc = "Search and insert a co-author at the cursor" })
 
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
 if not vim.loop.fs_stat(lazypath) then
@@ -36,3 +37,6 @@ end
 vim.opt.rtp:prepend(lazypath)
 
 require("lazy").setup("plugins")
+
+-- Todo
+-- - buffer switch and close
