@@ -5,16 +5,13 @@ return {
     vim.o.timeout = true
     vim.o.timeoutlen = 300
   end,
-  config = function()
-    local wk = require("which-key")
-    wk.setup({
-      window = { border = "single" }
-    })
-    wk.register({
-      s = { name = "Searching" },
-      t = { name = "Tests" },
-      l = { name = "LSP" },
-      g = { name = "Git" }
-    }, { prefix = "<leader>" })
-  end
+  opts = {
+    win = { border = "single" }
+  },
+  keys = {
+    { "<leader>g", group = "Git" },
+    { "<leader>l", group = "LSP" },
+    { "<leader>s", group = "Searching" },
+    { "<leader>t", group = "Tests" },
+  }
 }

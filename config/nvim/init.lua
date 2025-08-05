@@ -8,6 +8,7 @@ vim.cmd('set splitright')
 vim.cmd('set cursorline')
 vim.cmd('set clipboard+=unnamedplus')
 vim.cmd('set nowrap')
+vim.cmd('set scrolloff=5')
 
 vim.opt.termguicolors = true
 

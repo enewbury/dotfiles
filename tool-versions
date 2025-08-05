@@ -1,3 +1,4 @@
-erlang 25.3.2.8
-elixir 1.16.1-otp-25
+erlang 26.2.5
+elixir 1.18.2-otp-26
 nodejs 16.11.1
+rust 1.86.0
