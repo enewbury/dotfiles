@@ -1,4 +1,4 @@
-import = ["/home/eric/.config/alacritty/onedark.toml", "/home/eric/.config/alacritty/keybindings.toml"]
+general.import = ["/home/eric/.config/alacritty/onedark.toml", "/home/eric/.config/alacritty/keybindings.toml"]
 
 [env]
 TERM = "xterm-256color"
